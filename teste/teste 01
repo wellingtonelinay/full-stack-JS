@@ -1,0 +1,24 @@
+algoritmo "CalculoIMC"
+var
+    nome: caractere
+    peso, altura, imc: real
+
+inicio
+    // Solicita o nome do usuário
+    escreva("Informe o seu nome: ")
+    leia(nome)
+    
+    // Solicita o peso do usuário
+    escreva("Informe o seu peso (em kg): ")
+    leia(peso)
+    
+    // Solicita a altura do usuário
+    escreva("Informe a sua altura (em metros): ")
+    leia(altura)
+    
+    // Calcula o IMC
+    imc <- peso / (altura * altura)
+    
+    // Exibe o resultado para o usuário
+    escreva("Olá ", nome, ", o seu IMC é: ", imc:4:2)
+fimalgoritmo
